@@ -8,7 +8,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 
 LOCAL = False
-DEBUG = True
+DEBUG = False
 
 
 def main():
