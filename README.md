@@ -3,4 +3,4 @@
 # fvhn-watcher
 I simply like the style of [Floor van het Nederend](https://www.floorvanhetnederend.com) and would like to own some print.
 However, since I don't have Instagram, I'm always late to the party.
-This ugly piece of code should fix that.
+This ugly piece of code should fix that. This is run as a scheduled task on [Heroku](http://heroku.com).
