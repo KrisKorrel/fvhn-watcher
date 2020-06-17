@@ -33,10 +33,13 @@ def main():
     if len(results) == 0:
         result = ""
     else:
+        assert len(results) == 1
         result = results[0][0]
     print("DB result:", result)
 
     if result != first_match:
+        cursor.execute(f"DROP TABLE my_table")
+        cursor.execute("CREATE TABLE IF NOT EXISTS my_table (item VARCHAR(500));")
         cursor.execute(f"INSERT INTO my_table (item) VALUES (%s)", (first_match,))
 
     conn.commit()
