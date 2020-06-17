@@ -33,7 +33,6 @@ def main():
     if len(results) == 0:
         result = ""
     else:
-        # assert len(results) == 1
         result = results[0][0]
     print("DB result:", result)
 
